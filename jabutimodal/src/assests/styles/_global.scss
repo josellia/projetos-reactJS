@@ -1,0 +1,8 @@
+@import './base/reset';
+
+body{
+    height: 100%;
+    min-height: 100%;
+    overflow-x:hidden;
+    background: radial-gradient(ellipse at center, rgb(20, 20, 20) 0%,rgb(53, 55, 56) 100%);
+}
