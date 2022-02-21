@@ -1,16 +1,17 @@
 import { FaEye } from "react-icons/fa";
 import AnimateModalSimple from "../../components/AnimateModalSimple/AnimateModalSimple";
-import './Modals.scss';
+import "./Modals.scss";
 
 const Modals = () => {
-    const icon = FaEye;
-    return(
-        <div className="modal-container">
-            <AnimateModalSimple title="Modal Title" content="Modal Content Here"/>
-            text
-         <FaEye/>
-        </div>
-    )
-}
+  return (
+    <div className="modal-container">
+      <AnimateModalSimple
+        icon={<FaEye color="red" />}
+        title="Modal Title"
+        content="Modal Content Here"
+      />
+    </div>
+  );
+};
 
 export default Modals;
