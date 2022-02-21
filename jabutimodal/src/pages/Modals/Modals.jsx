@@ -9,6 +9,8 @@ const Modals = () => {
         icon={<FaEye color="red" />}
         title="Modal Title"
         content="Modal Content Here"
+        bgColorModalOpen="transparent"
+        // titleButton="Open modal"
       />
     </div>
   );
