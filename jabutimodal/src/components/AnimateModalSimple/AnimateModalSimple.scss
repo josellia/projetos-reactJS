@@ -6,11 +6,9 @@
 a.modal-open {
     display: block;
     padding: 20px;
-    // color: #ffa500;
     font-weight: bold;
     margin: 50px auto;
     width: 200px;
-    // background-color: #800080;
     border-radius: 2px;
     text-align: center;
     text-decoration: none;
@@ -66,13 +64,13 @@ a.modal-open {
     text-align: center;
     border-radius: 0 4px 0 0;
 }
-.modal-content h3 {
+.title-simple-modal  {
     padding:20px;
     display:block;
     text-align:center;
     border-bottom:1px solid #e0e0e0;
     text-transform:uppercase;
-    background:rgba(2,162,239,1);
+    // background:rgba(2,162,239,1);
     color:#fff;
     border-radius:4px 4px 0 0;
   }

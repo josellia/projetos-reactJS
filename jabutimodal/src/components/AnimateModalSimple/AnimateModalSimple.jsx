@@ -2,12 +2,16 @@ import React from "react";
 import './AnimateModalSimple.scss';
 
 const AnimateModalSimple = (props) => {
- const {titleButton, icon, title, content, bgColorModalOpen, colorTextOpenModal} = props;
+ const {titleButton, icon, title, content, bgColorModalOpen, colorTextOpenModal, bgHeader} = props;
 
  const styles = {
      stylesModalOpen: {
          background: bgColorModalOpen || '#800080',
          color: colorTextOpenModal || '#ffa500'
+     },
+
+     stylesTitle: {
+       background: bgHeader || 'rgba(2,162,239,1)'
      }
  }
   return (
@@ -26,7 +30,7 @@ const AnimateModalSimple = (props) => {
           <a href="!#" className="modal-close" title="Close Modal">
             X
           </a>
-          <h3>{title}</h3>
+          <h3 style={styles.stylesTitle} className="title-simple-modal">{title}</h3>
           <div className="modal-section">
             <p>{content}</p>
           </div>
@@ -39,19 +43,3 @@ const AnimateModalSimple = (props) => {
 export default AnimateModalSimple;
 
 
-const modalOpen = (bgColor) => {
-    const styles = {
-        backgroundColor: bgColor | 'tomato',
-        display: 'block',
-        padding: '20px',
-        color: 'orange',
-        fontWeight: 'bold',
-        margin: '50px auto',
-        width: '200px',
-        borderRadius: '2px',
-        textAlign: 'center',
-        textDecoration: 'none',
-    }
-
-    return styles;
-}
