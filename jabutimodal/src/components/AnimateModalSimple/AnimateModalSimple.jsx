@@ -2,7 +2,7 @@ import React from "react";
 import './AnimateModalSimple.scss';
 
 const AnimateModalSimple = (props) => {
- const {titleButton, icon, title, content, bgColorModalOpen, colorTextOpenModal, bgHeader} = props;
+ const {titleButton, icon, title, content, bgColorModalOpen, colorTextOpenModal} = props;
 
  const styles = {
      stylesModalOpen: {
@@ -25,7 +25,7 @@ const AnimateModalSimple = (props) => {
           <a href="!#" className="modal-close" title="Close Modal">
             X
           </a>
-          <h3  className="title-simple-modal">{title}</h3>
+          <h3  className="title-simple-modal bg-primary">{title}</h3>
           <div className="modal-section">
             <p>{content}</p>
           </div>
