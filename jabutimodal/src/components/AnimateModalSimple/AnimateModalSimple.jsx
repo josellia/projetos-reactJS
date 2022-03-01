@@ -25,6 +25,7 @@ const AnimateModalSimple = (props) => {
           <a href="!#" className="modal-close" title="Close Modal">
             X
           </a>
+          {/* TODO: fazer a classe dinâmica */}
           <h3  className="title-simple-modal bg-primary">{title}</h3>
           <div className="modal-section">
             <p>{content}</p>
